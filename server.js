@@ -5,7 +5,7 @@ let app = express();
 app.use(cors());
 
 app.get('/api/read',function(req,res){
-	res.json({ name : ['Do your best','make it now','do or die']
+	res.json({ name : ['Do your best','make it now','do or die','allways help needy']
 	});
 });
 
