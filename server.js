@@ -1,7 +1,10 @@
 let express = require('express');
+let cors = require('cors');
 let app = express();
 
-app.get('/read',function(req,res){
+app.use(cors());
+
+app.get('/api/read',function(req,res){
 	res.json({ name : ['mayank','pallav','shivendu','rahul']
 	});
 });
